@@ -209,23 +209,23 @@ From the above plot it is very clear that, the dataset is imbalanced in classes.
 
 #### Cross validation
 
-The training and validation contains 97 files to train and validate your models. The model is trained with training data but evaluation is performed on validation data. Random shuffling helps to reduce imbalance in the class. 
-
+The training and validation contains 97 files to train and validate your models. The model is trained with training data but evaluation is performed on validation data. Random shuffling helps to reduce imbalance in the class.
 
 ### Training
 
 #### Reference experiment
 
 ![plot](./result_images/train_loss_reference.png)
-![plot](./result_images/train_loss_reference.png)
+![plot](./result_images/eval_precision_reference.png)
+![plot](./result_images/eval_recall_reference.png)
 
 #### Improve on the reference
 
 ![plot](./result_images/train_loss_improved.png)
+![plot](./result_images/eval_precision_improved.png)
+![plot](./result_images/eval_recall_improved.png)
 
 ### Inference Results
 
-![plot](./result_images/train_loss_reference.png)
-
-
-
+![plot](./result_images/inference_1.jpg)
+![plot](./result_images/inference_2.jpg)
