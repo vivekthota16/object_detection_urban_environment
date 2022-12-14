@@ -243,6 +243,9 @@ Some examples of augmentations.
 
 - Following are the plots after improvements.
 
+The training loss converges much better and the inference results shows that vehicles are being detected.
+Data augmentation helped in reducing the overfitting.
+
 ![plot](./result_images/train_loss_improved.png)
 ![plot](./result_images/eval_precision_improved.png)
 ![plot](./result_images/eval_recall_improved.png)
