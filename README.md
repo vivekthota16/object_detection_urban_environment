@@ -209,18 +209,23 @@ From the above plot it is very clear that, the dataset is imbalanced in classes.
 
 #### Cross validation
 
-This section should detail the cross validation strategy and justify your approach.
+The training and validation contains 97 files to train and validate your models. The model is trained with training data but evaluation is performed on validation data. Random shuffling helps to reduce imbalance in the class. 
+
 
 ### Training
 
 #### Reference experiment
 
-This section should detail the results of the reference experiment. It should includes training metrics and a detailed explanation of the algorithm's performances.
+![plot](./result_images/train_loss_reference.png)
+![plot](./result_images/train_loss_reference.png)
 
 #### Improve on the reference
 
-This section should highlight the different strategies you adopted to improve your model. It should contain relevant figures and details of your findings.
+![plot](./result_images/train_loss_improved.png)
 
-```
+### Inference Results
 
-```
+![plot](./result_images/train_loss_reference.png)
+
+
+
