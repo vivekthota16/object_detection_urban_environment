@@ -215,11 +215,33 @@ The training and validation contains 97 files to train and validate your models.
 
 #### Reference experiment
 
+As one can see in the following plots, the regularization/normals loss is not converging even after 2500 steps.
+The training loss is very high.
+
+From the evaluation, it is clear that, the precision and recall is zero.
+The classifier didn't output any predictions (bounding boxes) during the inference.
+
 ![plot](./result_images/train_loss_reference.png)
 ![plot](./result_images/eval_precision_reference.png)
 ![plot](./result_images/eval_recall_reference.png)
 
-#### Improve on the reference
+#### Improvements performed on the reference
+
+To improve the detection and classification, I tried to tune the learning_rate and data augmentations.
+
+- For the learning rate of the optimizer, I decided to choose a little smaller learning rate with 5000 steps.
+- Initially by adding data augmentations such as brightness and contrast, I was able to see the better performance.
+- Therefore, to add more generality to the classifier to train on different , I decided to add the following augmentations.
+  - random_adjust_brightness
+  - random_adjust_contrast
+  - random_adjust_hue
+  - random_adjust_saturation
+  - random_distort_color
+
+Some examples of augmentations.
+![plot](./result_images/augmentations.jpg)
+
+- Following are the plots after improvements.
 
 ![plot](./result_images/train_loss_improved.png)
 ![plot](./result_images/eval_precision_improved.png)
